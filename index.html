@@ -40,9 +40,19 @@ video{
 
 <body>
 
-<video autoplay muted playsinline controls>
+<video id="vid" controls>
     <source src="kyungsoo.mp4" type="video/mp4">
 </video>
+
+<button onclick="playVideo()">Play Video with Sound</button>
+
+<script>
+function playVideo() {
+    const v = document.getElementById("vid");
+    v.muted = false;
+    v.play();
+}
+</script>
 
 <div class="container">
     <h1>💚 EXhOrizon in Manila</h1>
