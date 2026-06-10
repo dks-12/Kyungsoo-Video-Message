@@ -3,30 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Special Video</title>
+
+<title>EXhOrizon in Manila</title>
 
 <style>
 body{
+    font-family: Arial, sans-serif;
     margin:0;
-    background:#000;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    background:#f5f5f5;
+    text-align:center;
 }
 
 video{
     width:100%;
-    max-width:900px;
+    max-height:400px;
+    object-fit:cover;
+}
+
+.container{
+    padding:20px;
+}
+
+.button{
+    display:block;
+    margin:10px auto;
+    width:250px;
+    padding:15px;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
 }
 </style>
 </head>
 
 <body>
 
-<video controls autoplay>
+<video autoplay muted playsinline loop>
     <source src="kyungsoo.mp4" type="video/mp4">
 </video>
+
+<div class="container">
+    <h1>💚 EXhOrizon in Manila</h1>
+
+    <p>Thank you for supporting our fan project!</p>
+
+    <a class="button" href="https://x.com/youraccount">
+        X / Twitter
+    </a>
+
+    <a class="button" href="https://instagram.com/d.o.hkyungsoo">
+        Instagram
+    </a>
+
+    <a class="button" href="https://facebook.com/youraccount">
+        Facebook
+    </a>
+
+    <a class="button" href="https://tiktok.com/@youraccount">
+        TikTok
+    </a>
+</div>
 
 </body>
 </html>
