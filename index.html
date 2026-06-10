@@ -40,17 +40,25 @@ video{
 
 <body>
 
-<video sutoplay playsinline>
+<video id="vid" controls>
     <source src="kyungsoo.mp4" type="video/mp4">
 </video>
 
+<button onclick="playVideo()">Play Video with Sound</button>
+
+<script>
+function playVideo() {
+    const v = document.getElementById("vid");
+    v.muted = false;
+    v.play();
+}
+</script>
+
 
 <div class="container">
-    <h1>💚 EXhOrizon in Manila</h1>
+    <h1>DOH KYUNGSOO</h1>
 
-    <p>Thank you for supporting our fan project!</p>
-
-    <a class="button" href="https://x.com/youraccount">
+    <a class="button" href="https://x.com/dohkyungsoo_x">
         X / Twitter
     </a>
 
@@ -58,13 +66,6 @@ video{
         Instagram
     </a>
 
-    <a class="button" href="https://facebook.com/youraccount">
-        Facebook
-    </a>
-
-    <a class="button" href="https://tiktok.com/@youraccount">
-        TikTok
-    </a>
 </div>
 
 </body>
