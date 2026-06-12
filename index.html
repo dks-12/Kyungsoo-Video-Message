@@ -8,7 +8,7 @@
 
 <style>
 body{
-    font-family: Times New Roman, sans-serif;
+    font-family: Arial Black, sans-serif;
     margin:0;
     background:#f5f5f5;
     text-align:center;
@@ -50,6 +50,45 @@ video{
     border-radius:10px;
     font-weight:bold;
 }
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    min-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+button.button{
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
 </style>
 </head>
 
@@ -63,13 +102,21 @@ video{
 <div class="container">
     <h1>DOH KYUNGSOO</h1>
 
-    <a class="button" href="https://x.com/dohkyungsoo_x">
-        X / Twitter
-    </a>
+    <div class="dropdown">
+    <button class="button">
+        Socials ▼
+    </button>
 
-    <a class="button" href="https://instagram.com/d.o.hkyungsoo">
-        Instagram
-    </a>
+        <div class="dropdown-content">
+            <a href="https://x.com/dohkyungsoo_x">
+                X / Twitter
+            </a>
+
+            <a href="https://instagram.com/d.o.hkyungsoo">
+                Instagram
+            </a>
+        </div>
+    </div>
 
     <a class="button" href="https://stationhead.com/stationdoh">
         Stationhead
