@@ -79,9 +79,14 @@ video{
     background: #f0f0f0;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown-content{
+    display: none;
+}
+
+.dropdown-content.show{
     display: block;
 }
+
 
 button.button{
     border: none;
@@ -142,6 +147,19 @@ button.button{
     </a>
 
 </div>
+
+<script>
+function toggleDropdown(event) {
+    event.stopPropagation();
+    document.getElementById("socialDropdown")
+            .classList.toggle("show");
+}
+
+document.addEventListener("click", function() {
+    document.getElementById("socialDropdown")
+            .classList.remove("show");
+});
+</script>
 
 </body>
 </html>
